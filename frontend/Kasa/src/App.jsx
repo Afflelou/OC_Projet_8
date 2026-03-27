@@ -1,32 +1,37 @@
 // App.jsx
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
-
-// Pages simples
-function Home() {
-  return <h1>Accueil</h1>;
-}
-
-function About() {
-  return <h1>À propos de nous</h1>;
-}
+import "./App.css";
+import NotFound from "./NotFound";
+import Home from "./Home";
+import About from "./About";
+import KasaLogo from "./assets/kasa-logo.png";
+import KasaFooter from "./assets/kasa-footer.png";
 
 function App() {
   return (
-    <BrowserRouter>
-      <nav>
-        <NavLink to="/" style={({ isActive }) => ({ textDecoration: isActive ? "normal" : "underline" })}>Accueil</NavLink>
-        <NavLink to="/about">À propos</NavLink>
-      </nav>
+    <body>
+      <img src={KasaLogo} alt="Kasa Logo" />
 
-      {/* Routes */}
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<h2>404 - Page non trouvée</h2>} />
-        </Routes>
-      </main>
-    </BrowserRouter>
+      <BrowserRouter>
+        <nav>
+          <NavLink to="/" style={({ isActive }) => ({ textDecoration: isActive ? "normal" : "underline" })}>Accueil</NavLink>
+          <NavLink to="/about" style={({ isActive }) => ({ textDecoration: isActive ? "normal" : "underline" })}>À propos</NavLink>
+        </nav>
+
+        {/* Routes */}
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+
+      <footer>
+        <img src={KasaFooter} alt="Kasa Footer" />
+      </footer>
+    </body>
   );
 }
 
