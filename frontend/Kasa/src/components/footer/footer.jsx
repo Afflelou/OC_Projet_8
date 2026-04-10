@@ -1,11 +1,14 @@
 import KasaFooter from "../../assets/kasa-footer.png";
+import KasaFooterMobile from "../../assets/kasa-footer-m.png";
 import './footer.css';
 
 function Footer() {
     return (
-
         <footer>
-            <img src={KasaFooter} alt="Kasa Footer" />
+            <picture>
+                <source srcSet={KasaFooterMobile} media="(max-width: 768px)" />
+                <img src={KasaFooter} alt="Kasa Footer" />
+            </picture>
         </footer>
     );
 }

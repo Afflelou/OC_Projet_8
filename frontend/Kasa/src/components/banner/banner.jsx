@@ -1,12 +1,11 @@
 import React from 'react';
-import mainImg from "../../assets/kasa-main.png";
 import './banner.css';
 
-const Banner = () => {
+const Banner = ({ imgSrc, title }) => {
     return (
         <section className="banner">
-            <img src={mainImg} alt="Kasa Main" />
-            <h1>Chez vous, partout ailleurs</h1>
+            <img src={imgSrc} alt="Kasa Main" />
+            {title && <h1>{title}</h1>}
         </section>
     );
 };

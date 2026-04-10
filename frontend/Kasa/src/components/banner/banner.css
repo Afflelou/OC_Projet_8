@@ -25,6 +25,8 @@
     text-align: center;
     margin: 0;
     white-space: nowrap;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 @media (max-width: 768px) {
