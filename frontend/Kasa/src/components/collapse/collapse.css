@@ -1,0 +1,53 @@
+.collapse {
+    margin: 0 40px 24px;
+}
+
+.collapse-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6060;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.collapse-chevron {
+    font-size: 1.2rem;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+.collapse-chevron.open {
+    transform: rotate(-180deg);
+    transition: transform 0.5s ease;
+}
+
+.collapse-body {
+    background-color: #f6f6f6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    border-radius: 0 0 5px 5px;
+}
+
+.collapse-body.open {
+    max-height: 300px;
+    transition: max-height 0.5s ease;
+
+}
+
+.collapse-body p {
+    font-family: "Montserrat", sans-serif;
+    padding: 16px 20px;
+    margin: 0;
+    color: #000;
+}

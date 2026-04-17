@@ -4,6 +4,7 @@ import "./App.css";
 import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Lodging from "./pages/Lodging";
 import KasaHeader from "./components/header/header";
 import KasaFooter from "./components/footer/footer";
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/lodging/:id" element={<Lodging />} />
           </Routes>
         </main>
       </BrowserRouter>

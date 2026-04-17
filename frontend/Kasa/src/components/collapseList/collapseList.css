@@ -1,0 +1,9 @@
+.collapses-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.collapses-container .collapse {
+    margin-left: 0;
+    margin-right: 0;
+}
