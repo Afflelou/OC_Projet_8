@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import './rating.css';
 
 function Rating({ rating }) {
@@ -5,7 +7,11 @@ function Rating({ rating }) {
     return (
         <div className="rating">
             {[1, 2, 3, 4, 5].map(i => (
-                <span key={i} className={`star ${i <= score ? 'filled' : ''}`}>★</span>
+                <FontAwesomeIcon
+                    key={i}
+                    icon={faStar}
+                    className={`star ${i <= score ? 'filled' : ''}`}
+                />
             ))}
         </div>
     );

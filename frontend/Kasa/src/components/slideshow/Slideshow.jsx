@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './slideshow.css';
 
 function Slideshow({ pictures }) {
@@ -14,8 +16,12 @@ function Slideshow({ pictures }) {
             <img src={pictures[index]} alt="logement" className="slideshow-img" />
             {pictures.length > 1 && (
                 <>
-                    <button className="slideshow-arrow slideshow-arrow-left" onClick={prev}>&#10094;</button>
-                    <button className="slideshow-arrow slideshow-arrow-right" onClick={next}>&#10095;</button>
+                    <button className="slideshow-arrow slideshow-arrow-left" onClick={prev}>
+                        <FontAwesomeIcon icon={faChevronLeft} />
+                    </button>
+                    <button className="slideshow-arrow slideshow-arrow-right" onClick={next}>
+                        <FontAwesomeIcon icon={faChevronRight} />
+                    </button>
                     <span className="slideshow-counter">{index + 1} / {pictures.length}</span>
                 </>
             )}
