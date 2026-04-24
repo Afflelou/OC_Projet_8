@@ -1,0 +1,14 @@
+.title-location-title {
+    color: #FF6060;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+}
+
+.title-location-location {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}

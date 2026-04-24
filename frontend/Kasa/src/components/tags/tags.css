@@ -1,0 +1,16 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.tag {
+    background-color: #FF6060;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 6px 20px;
+    border-radius: 20px;
+}

@@ -1,0 +1,22 @@
+.host {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.host-name {
+    color: #FF6060;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: right;
+    max-width: 100px;
+}
+
+.host-picture {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}

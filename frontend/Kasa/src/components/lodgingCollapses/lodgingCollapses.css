@@ -1,0 +1,10 @@
+.lodging-collapses {
+    display: flex;
+    gap: 24px;
+    margin: 0 40px 24px;
+}
+
+.lodging-collapses .collapse {
+    flex: 1;
+    margin: 0;
+}
