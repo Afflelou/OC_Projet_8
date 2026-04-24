@@ -45,9 +45,14 @@
 
 }
 
-.collapse-body p {
+.collapse-body p,
+.collapse-body .collapse-list {
     font-family: "Montserrat", sans-serif;
     padding: 16px 20px;
     margin: 0;
     color: #000;
+}
+
+.collapse-list {
+    list-style: none;
 }

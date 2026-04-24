@@ -14,7 +14,13 @@ function Collapse({ title, content }) {
                 <span className={`collapse-chevron ${isOpen ? 'open' : ''}`}>⌃</span>
             </button>
             <div className={`collapse-body ${isOpen ? 'open' : ''}`}>
-                <p>{content}</p>
+                {Array.isArray(content) ? (
+                    <ul className="collapse-list">
+                        {content.map((item, i) => <li key={i}>{item}</li>)}
+                    </ul>
+                ) : (
+                    <p>{content}</p>
+                )}
             </div>
         </div>
     );
