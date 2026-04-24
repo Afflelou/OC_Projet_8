@@ -12,7 +12,9 @@
     .properties {
         grid-template-columns: 1fr;
         margin: 16px;
-        padding: 16px;
+        padding: 0;
         gap: 16px;
+        background-color: transparent;
+        border-radius: 0;
     }
 }
