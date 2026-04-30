@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Slideshow from '../components/slideshow/Slideshow';
 import LodgingInfo from '../components/lodgingInfo/LodgingInfo';
@@ -16,6 +16,7 @@ function Lodging() {
     }, [id]);
 
     if (!property) return null;
+    if (property.id === undefined) return <Navigate to="/not-found" />;
 
     return (
         <div>

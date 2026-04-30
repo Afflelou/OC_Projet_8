@@ -10,7 +10,7 @@ import KasaFooter from "./components/footer/footer";
 
 function App() {
   return (
-    <body>
+    <div className="app">
       <BrowserRouter>
         <KasaHeader />
         {/* Routes */}
@@ -24,7 +24,7 @@ function App() {
         </main>
       </BrowserRouter>
       <KasaFooter />
-    </body>
+    </div>
   );
 }
 

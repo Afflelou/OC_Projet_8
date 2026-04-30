@@ -14,9 +14,10 @@
     font-weight: 500;
     padding: 16px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     text-align: left;
+    max-height: 52px;
 }
 
 .collapse-chevron {
@@ -55,4 +56,25 @@
 
 .collapse-list {
     list-style: none;
+}
+
+@media (max-width: 768px) {
+    .collapse {
+        margin: 0 20px 16px;
+    }
+
+    .collapse-header {
+        font-size: 1rem;
+        padding: 12px 16px;
+    }
+
+    .collapse-chevron {
+        font-size: 1rem;
+    }
+
+    .collapse-body p,
+    .collapse-body .collapse-list {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
 }

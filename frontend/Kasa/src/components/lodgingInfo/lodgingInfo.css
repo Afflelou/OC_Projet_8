@@ -11,3 +11,18 @@
     align-items: flex-end;
     gap: 16px;
 }
+
+@media (max-width: 768px) {
+    .lodging-info {
+        flex-direction: column;
+        margin: 16px;
+        gap: 16px;
+    }
+
+    .lodging-info-right {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

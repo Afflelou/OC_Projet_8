@@ -8,3 +8,11 @@
     flex: 1;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .lodging-collapses {
+        flex-direction: column;
+        gap: 16px;
+        margin: 0 16px 24px;
+    }
+}
