@@ -13,16 +13,16 @@ function Slideshow({ pictures }) {
 
     return (
         <div className="slideshow">
-            <img src={pictures[index]} alt="logement" className="slideshow-img" />
+            <img id="slideshow-img" src={pictures[index]} alt="logement" className="slideshow-img" />
             {pictures.length > 1 && (
                 <>
-                    <button className="slideshow-arrow slideshow-arrow-left" onClick={prev}>
+                    <button id="slideshow-prev" className="slideshow-arrow slideshow-arrow-left" onClick={prev}>
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
-                    <button className="slideshow-arrow slideshow-arrow-right" onClick={next}>
+                    <button id="slideshow-next" className="slideshow-arrow slideshow-arrow-right" onClick={next}>
                         <FontAwesomeIcon icon={faChevronRight} />
                     </button>
-                    <span className="slideshow-counter">{index + 1} / {pictures.length}</span>
+                    <span id="slideshow-counter" className="slideshow-counter">{index + 1} / {pictures.length}</span>
                 </>
             )}
         </div>
